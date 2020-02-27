@@ -22,7 +22,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'tx%8!x#)l$op%i1-sa1!!=2onte-q+bpvuk^#(6z%za@er_-qg'
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'rm7&5ygx1zv8)6x7469^(5a^uq(l#k=)u+$cdrc+$4@etu!g2-')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
