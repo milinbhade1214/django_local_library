@@ -1,0 +1,77 @@
+{% extends 'base_generic.html' %}
+{% load static%}
+{% block title%}
+<title>Index Page</title>
+{% endblock %}
+
+
+
+
+{% block content %}
+  <div class="main-head">
+    <h1>Local Library Home</h1>
+
+    <p>Welcome to Local Library, a website developed by <em>Milin Bhade</em></p>
+  </div>
+
+
+  <div class="row">
+    <h2 style="width:100%;">Dynamic content</h2>
+
+
+    <h3>The Library has the following record count: </h3>
+    <div class="">
+      <ul>
+        <li><strong>Books:</strong> {{ num_books }}</li>
+        <li><strong>Copies:</strong> {{ num_instances }}</li>
+        <li><strong>Copies Available :</strong> {{ num_instances_available }}</li>
+        <li><strong>Author: </strong> {{ num_authors }}</li>
+      </ul>
+      <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+    </div>
+
+  </div>
+
+
+
+{% endblock %}
+
+{% block photos %}
+
+  <div class="gallery" >
+    <a target="_blank" href="{% static 'images/img2.jpg' %}">
+      <img src="{% static 'images/img2.jpg' %}" alt="Cinque Terre" width="1000" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{% static 'images/img3.jpg' %}">
+      <img src="{% static 'images/img3.jpg' %}" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{% static 'images/img4.jpg' %}">
+      <img src="{% static 'images/img4.jpg' %}" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="{% static 'images/img5.jpg' %}">
+      <img src="{% static 'images/img5.jpg' %}" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+    <div class="gallery">
+      <a target="_blank" href="{% static 'images/img6.jpg' %}">
+        <img src="{% static 'images/img6.jpg' %}" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+  </div>
+
+
+
+{% endblock %}
