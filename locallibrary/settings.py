@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'rm7&5ygx1zv8)6x7469^(5a^uq(l#k
 DEBUG = os.environ.get('DJANGO_DEBUG','') != 'False'
 
 
-ALLOWED_HOSTS = ['glacial-sands-88692.herokuapp.com', '127.0.0.1']
+# ALLOWED_HOSTS = ['glacial-sands-88692.herokuapp.com', '127.0.0.1']
 ALLOWED_HOSTS = ['milin.herokuapp.com','127.0.0.1']
 
 # Application definition
